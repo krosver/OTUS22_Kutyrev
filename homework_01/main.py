@@ -21,6 +21,8 @@ PRIME = "prime"
 
 
 def is_prime(num: int) -> bool:
+    if num < 2:
+        return False
     for divider in range(num)[:1:-1]:
         if num % divider == 0:
             return False
